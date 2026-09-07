@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reg Page</title>
+    <link rel="icon" href="">
+  </head>
+  <body>
+   
+    <form action="/register" method="post">
+      <h1>Registeration Page</h1>
+       <label for="file">Profile Picture</label>
+        <input type="file">
+       
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" required placeholder="Name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your Email"
+        />
+      </div>
+      <div>
+        <label for="password">Passord</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="Enter Your Password"
+          minlength="12"
+        />
+      </div>
+      <div>
+        <label for="number">Number</label>
+        <input
+          type="tel"
+          id="number"
+          required
+          placeholder="Enter your Phone Number"
+        />
+      </div>
+      <div>
+        <label for="Age">Age</label>
+        <input
+          type="number"
+          id="Age"
+          name="Age"
+          required
+          placeholder="Enter Your Age"
+          min="15"
+          max="35"
+        />
+      </div>
+      <div>
+        <label for="Date of biirth">Date of birth</label>
+        <input type="date" id="Date of birth" name="Date of Birth" />
+      </div>
+      <div>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="Male" />Male
+        <input type="radio" name="gender" value="Female" />Female
+      </div>
+      <label for="country">Country</label>
+      <select name="Country" id="Country">
+        Select your Country
+        <option value="">Select your Country</option>
+        <option value="Taiwan">Taiwan</option>
+        <option value="Uzbekistan">Uzbekistan</option>
+        <option value="Oman">Oman</option>
+        <option value="Malta">Malta</option>
+      </select>
+<div>
+    <p><label for="skill">Skills</label></p>
+    <input type="checkbox" required> Critical Thinking
+    <input type="checkbox" required> Digital Literacy
+    <input type="checkbox" required> Financial Literacy
+    <input type="checkbox" required> Problem Solving
+    <input type="checkbox" required> Collaboration
+</div>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    <div>
+        <label>
+            <input type="checkbox">I agree to the terms and conditions
+        </label>
+    </div>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @keyframes zigzag {
+        0% {
+          left: 0%;
+          bottom: 0;
+        }
+        10% {
+          left: 10%;
+          bottom: 80%;
+        }
+        20% {
+          left: 20%;
+          bottom: 0;
+        }
+        30% {
+          left: 30%;
+          bottom: 80%;
+        }
+        40% {
+          left: 40%;
+          bottom: 0;
+        }
+        50% {
+          left: 50%;
+          bottom: 80%;
+        }
+        60% {
+          left: 60%;
+          bottom: 0;
+        }
+        70% {
+          left: 70%;
+          bottom: 80%;
+        }
+        80% {
+          left: 80%;
+          bottom: 0;
+        }
+
+        90% {
+          left: 90%;
+          bottom: 80%;
+        }
+
+        100% {
+          left: 100%;
+          bottom: 0;
+        }
+      }
+
+      .balls {
+        animation: zigzag 10s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative h-40 border-4 border-slate-600 rounded-md m-6 overflow-hidden">
+      <div
+        class="absolute w-10 h-10 border-4 border-red-600 rounded-full bg-black balls"
+      ></div>
+    </div>
+  </body>
+</html>

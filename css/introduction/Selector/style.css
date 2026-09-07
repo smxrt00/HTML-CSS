@@ -1,0 +1,89 @@
+/* CSS selectors */
+
+/* styling with univeral selector */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling with element selector */
+
+body {
+  background-color: darkgrey;
+}
+h1 {
+  font-size: 28px;
+  color: blue;
+  text-align: left;
+  font-weight: bolder;
+}
+p {
+  font-size: 16px;
+  color: brown;
+}
+
+/* styling with ID selector */
+
+#myHeading {
+  color: green;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 200;
+}
+#myParagraph {
+  color: purple;
+  font-size: 18px;
+}
+
+/* styling with class selector */
+.headerClass {
+  color: saddlebrown;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+}
+.paragraphClass {
+  color: blueviolet;
+  font-size: 16px;
+}
+
+/* styling with grouping selectors */
+
+h1,
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2,
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1,
+.paragraphClass,
+#myHeading {
+  font-style: italic;
+}
+
+/* styling with dedcendant selector */
+
+.parent h2 {
+  color: red;
+  text-align: center;
+  font-size: 22px;
+}
+.parent > p {
+  color: darkgreen;
+  font-size: 16px;
+  text-align: justify;
+}
+.parent .content {
+  color: navy;
+  font-size: 14px;
+  text-align: left;
+}
+.Para1 {
+  font-weight: bolder;
+}

@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whatsapp Mirror</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="bg-black text-white flex justify-center h-screen w-screen overflow-hidden md:p-5"
+  >
+    <!-- Phone -->
+    <div
+      class="relative w-full max-w-[412px] h-full flex flex-col px-[8px] py-[9px] bg-zinc-900 overflow-hidden"
+    >
+      <!-- Status Bar -->
+      <div class="shrink-0 text-xs flex justify-between items-center">
+        <div>12:14</div>
+
+        <div class="flex items-center gap-1">
+          <ion-icon name="remove-circle"></ion-icon>
+          <ion-icon name="volume-mute"></ion-icon>
+          <ion-icon name="radio"></ion-icon>
+          <ion-icon name="wifi"></ion-icon>
+          <ion-icon name="cellular"></ion-icon>
+          <ion-icon name="cellular"></ion-icon>
+          <ion-icon name="battery-half"></ion-icon>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="flex flex-col flex-1 min-h-0 mt-[20px]">
+        <!-- Header + Search -->
+        <div class="shrink-0 flex flex-col gap-[10px]">
+          <!-- WhatsApp Header -->
+          <div class="flex items-center justify-between text-xl font-semibold">
+            <p>WhatsApp</p>
+
+            <div class="flex items-center gap-3">
+              <ion-icon name="camera-outline"></ion-icon>
+              <ion-icon name="ellipsis-vertical"></ion-icon>
+            </div>
+          </div>
+
+          <!-- Search -->
+          <div class="flex items-center gap-[5px] bg-zinc-800 p-4 rounded-full">
+            <ion-icon
+              class="text-gray-500 text-xl shrink-0"
+              name="search-outline"
+            >
+            </ion-icon>
+
+            <input
+              type="text"
+              class="w-full min-w-0 bg-transparent outline-none placeholder:text-gray-500"
+              placeholder="Ask Meta AI or Search"
+            />
+          </div>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div
+          class="flex-1 min-h-0 overflow-y-auto overflow-x-hidden mt-[10px] pb-[80px]"
+        >
+          <!-- Filter Buttons -->
+          <div class="flex gap-2.5 overflow-x-auto pb-2 scrollbar-hide">
+            <div
+              class="shrink-0 border border-zinc-600 text-zinc-400 py-2 px-5 text-sm rounded-[50px]"
+            >
+              All
+            </div>
+
+            <div
+              class="shrink-0 border border-zinc-600 text-zinc-400 py-2 px-5 text-sm rounded-[50px]"
+            >
+              Unread
+            </div>
+
+            <div
+              class="shrink-0 border border-zinc-600 text-zinc-400 py-2 px-5 text-sm rounded-[50px]"
+            >
+              Favorite
+            </div>
+
+            <div
+              class="shrink-0 border border-zinc-600 text-zinc-400 py-2 px-5 text-sm rounded-[50px]"
+            >
+              Friends
+            </div>
+
+            <div
+              class="shrink-0 border border-zinc-600 text-zinc-400 py-2 px-5 text-sm rounded-[50px]"
+            >
+              Family
+            </div>
+
+            <div
+              class="shrink-0 border border-zinc-600 text-zinc-400 py-2 px-5 text-sm rounded-[50px]"
+            >
+              Enemies
+            </div>
+          </div>
+
+          <!-- Chats -->
+          <div class="flex flex-col gap-5 mt-3">
+            <!-- Chat -->
+            <div class="flex items-center gap-[10px] min-w-0">
+              <img
+                src="images/Men's Shoes & Sneakers.jpg"
+                class="w-[75px] h-[75px] shrink-0 rounded-full"
+              />
+
+              <div class="flex justify-between gap-2 w-full min-w-0">
+                <div class="min-w-0">
+                  <p class="font-bold truncate">Stone💪💪</p>
+
+                  <span class="block text-gray-500 text-sm truncate">
+                    How fa bro, how the hustle ndndnffjnf
+                  </span>
+                </div>
+
+                <div class="shrink-0 text-right">
+                  <p>12:14</p>
+
+                  <span
+                    class="text-xs text-zinc-800 bg-emerald-600 px-2.5 py-[2px] rounded-full font-bold"
+                  >
+                    123
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat -->
+            <div class="flex items-center gap-[10px] min-w-0">
+              <img
+                src="images/Men's Shoes & Sneakers.jpg"
+                class="w-[75px] h-[75px] shrink-0 rounded-full"
+              />
+
+              <div class="flex justify-between gap-2 w-full min-w-0">
+                <div class="min-w-0">
+                  <p class="font-bold truncate">Stone💪💪</p>
+
+                  <span class="block text-gray-500 text-sm truncate">
+                    How fa bro, how the hustle ndndnffjnf
+                  </span>
+                </div>
+
+                <div class="shrink-0 text-right">
+                  <p>12:14</p>
+
+                  <span
+                    class="text-xs text-zinc-800 bg-emerald-600 px-2.5 py-[2px] rounded-full font-bold"
+                  >
+                    123
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat -->
+            <div class="flex items-center gap-[10px] min-w-0">
+              <img
+                src="images/Men's Shoes & Sneakers.jpg"
+                class="w-[75px] h-[75px] shrink-0 rounded-full"
+              />
+
+              <div class="flex justify-between gap-2 w-full min-w-0">
+                <div class="min-w-0">
+                  <p class="font-bold truncate">Stone💪💪</p>
+
+                  <span class="block text-gray-500 text-sm truncate">
+                    How fa bro, how the hustle ndndnffjnf
+                  </span>
+                </div>
+
+                <div class="shrink-0 text-right">
+                  <p>12:14</p>
+
+                  <span
+                    class="text-xs text-zinc-800 bg-emerald-600 px-2.5 py-[2px] rounded-full font-bold"
+                  >
+                    123
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat -->
+            <div class="flex items-center gap-[10px] min-w-0">
+              <img
+                src="images/Men's Shoes & Sneakers.jpg"
+                class="w-[75px] h-[75px] shrink-0 rounded-full"
+              />
+
+              <div class="flex justify-between gap-2 w-full min-w-0">
+                <div class="min-w-0">
+                  <p class="font-bold truncate">Stone💪💪</p>
+
+                  <span class="block text-gray-500 text-sm truncate">
+                    How fa bro, how the hustle ndndnffjnf
+                  </span>
+                </div>
+
+                <div class="shrink-0 text-right">
+                  <p>12:14</p>
+
+                  <span
+                    class="text-xs text-zinc-800 bg-emerald-600 px-2.5 py-[2px] rounded-full font-bold"
+                  >
+                    123
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat -->
+            <div class="flex items-center gap-[10px] min-w-0">
+              <img
+                src="images/Men's Shoes & Sneakers.jpg"
+                class="w-[75px] h-[75px] shrink-0 rounded-full"
+              />
+
+              <div class="flex justify-between gap-2 w-full min-w-0">
+                <div class="min-w-0">
+                  <p class="font-bold truncate">Stone💪💪</p>
+
+                  <span class="block text-gray-500 text-sm truncate">
+                    How fa bro, how the hustle ndndnffjnf
+                  </span>
+                </div>
+
+                <div class="shrink-0 text-right">
+                  <p>12:14</p>
+
+                  <span
+                    class="text-xs text-zinc-800 bg-emerald-600 px-2.5 py-[2px] rounded-full font-bold"
+                  >
+                    123
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat -->
+            <div class="flex items-center gap-[10px] min-w-0">
+              <img
+                src="images/Men's Shoes & Sneakers.jpg"
+                class="w-[75px] h-[75px] shrink-0 rounded-full"
+              />
+
+              <div class="flex justify-between gap-2 w-full min-w-0">
+                <div class="min-w-0">
+                  <p class="font-bold truncate">Stone💪💪</p>
+
+                  <span class="block text-gray-500 text-sm truncate">
+                    How fa bro, how the hustle ndndnffjnf
+                  </span>
+                </div>
+
+                <div class="shrink-0 text-right">
+                  <p>12:14</p>
+
+                  <span
+                    class="text-xs text-zinc-800 bg-emerald-600 px-2.5 py-[2px] rounded-full font-bold"
+                  >
+                    123
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat -->
+            <div class="flex items-center gap-[10px] min-w-0">
+              <img
+                src="images/Men's Shoes & Sneakers.jpg"
+                class="w-[75px] h-[75px] shrink-0 rounded-full"
+              />
+
+              <div class="flex justify-between gap-2 w-full min-w-0">
+                <div class="min-w-0">
+                  <p class="font-bold truncate">Stone💪💪</p>
+
+                  <span class="block text-gray-500 text-sm truncate">
+                    How fa bro, how the hustle ndndnffjnf
+                  </span>
+                </div>
+
+                <div class="shrink-0 text-right">
+                  <p>12:14</p>
+
+                  <span
+                    class="text-xs text-zinc-800 bg-emerald-600 px-2.5 py-[2px] rounded-full font-bold"
+                  >
+                    123
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom WhatsApp Navigation -->
+        <div
+          class="shrink-0 absolute bottom-[55px] left-0 w-full px-3 py-3 flex justify-around items-center bg-zinc-900 border-t border-zinc-800"
+        >
+          <div class="flex flex-col items-center">
+            <ion-icon name="chatbubble-outline"></ion-icon>
+            <p class="text-[9px]">Chats</p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <ion-icon name="nuclear-outline"></ion-icon>
+            <p class="text-[9px]">Updates</p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <ion-icon name="people-outline"></ion-icon>
+            <p class="text-[9px]">Communities</p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <ion-icon name="call-outline"></ion-icon>
+            <p class="text-[9px]">Calls</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone Navigation -->
+      <div class="shrink-0 h-[45px] flex justify-around items-center text-lg">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="radio-button-on-outline"></ion-icon>
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </div>
+    </div>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

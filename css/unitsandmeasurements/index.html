@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!-- Absolute and realtive units -->
+      <!-- Absolute units represents a fixed measurement while relative units are dependent on either the parent element or the root element  -->
+
+      <!-- The most commonly used unit in the absolute is the pixels (px). Other examples are centimeters(cm), millimeters(m), inches(i), points(pt.m picas(pc)) -->
+
+      <!-- Examples of relative units are: percentage(%), elements(em), root elements(rem), viewportwidth(vw), viewportheight(vh), viewmin(vmin), viewmax(vmax). -->
+
+      <!-- The element below is styled to e 32px. Because the root element ddefault sixe is 16px, 2rem basically means 16 * 2 which gives 32px -->
+      <p style="font-size: 2rem">Hello World</p>
+
+      <!-- The "JOhn Doe" below takes the size of 30px, because the parent is styled to be 10px, and em units depends on the parent. -->
+      <div style="font-size: 10px">
+        <p style="font-size: 3em">John Doe</p>
+      </div>
+
+      <!-- The nested div takes 70% of the width of the parent container. -->
+
+      <div style="width: 100%">
+        <div style="width: 70%"></div>
+      </div>
+
+<!--  -->
+      <div style=" width: 80%; margin: 5vh auto; padding: 2rem; font-size: 1rem;"></div>
+
+    </main>
+  </body>
+</html>

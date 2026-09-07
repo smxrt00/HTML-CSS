@@ -1,0 +1,48 @@
+body {
+    background-color: burlywood;
+}
+h1 {
+    color:brown;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+}
+img {
+    border: 3px solid black;
+    border-radius: 8px;
+}
+.Ingredient {
+    /* padding: 10px 5px 10px 5px; */
+    margin: 20px 5px 10px 5px;
+    text-align:center;
+    background-color: brown;
+     width: 150px;
+     border-radius: 5px;
+}
+.Ing1 {
+    border: 3px solid black;
+    border-radius: 8px;
+}
+.prep2 {
+    
+    border-radius: 8px;
+}
+.prep1 {
+    text-align: center;
+    background-color: brown;
+     width: 150px;
+     border-radius: 5px;
+}
+.btn1 {
+    border-radius: 8px;
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+article {
+    padding: 10px ;
+    margin-top: 5px;
+}
+
+

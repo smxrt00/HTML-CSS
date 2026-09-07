@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox and Grid</title>
+    <script src="http://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col gap-[30px]">
+    <!-- Flex Box -->
+    <nav
+      class="flex items-center justify-between bg-slate-900 text-white px-6 py-4"
+    >
+      <span class="font-bold text-lg"> Brand </span>
+
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-amber-400">Home</a>
+        <a href="#" class="hover:text-amber-400">About</a>
+        <a href="#" class="hover:text-amber-400">Contact</a>
+      </div>
+    </nav>
+    <div class="flex gap-3 flex-wrap">
+      <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
+        Design
+      </span>
+      <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
+        Engineering
+      </span>
+      <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
+        Product
+      </span>
+      <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
+        Marketing
+      </span>
+      <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
+        Research
+      </span>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid grid-cols-4 grid-rows-2 gap-3 h-80">
+      <div class="col-span-2 row-span-2 bg-blue-600 rounded overflow-hidden">
+        <img src="./Images/download (3).jpg" class="object-cover">
+      </div>
+
+      <div class="bg-blue-400 rounded overflow-hidden">
+        <img src="./Images/download (1).jpg" class="w-full h-full object-cover">
+      </div>
+      <div class="bg-blue-400 rounded row-span-2 overflow-hidden">
+<img src="./Images/download (2).jpg" classs="object-cover">
+      </div>
+      <div class="bg-blue-400 rounded overflow-hidden">
+<img src="./Images/Northskull Spring_Summer 2018 Lookbook.jpg" class="w-full h-full object-cover">
+      </div>
+      
+    </div>
+
+
+     <div class="grid grid-cols-3 gap-4 place-items-center h-48 bg-slate-50 rounded">
+
+<div class="bg-blue-500 text-white w-12 h-12 rounded flex items-center justify-center">
+1
+</div>
+<div class="bg-blue-500 text-white w-12 h-12 rounded flex items-center justify-center">
+2
+</div>
+<div class="bg-blue-500 text-white w-12 h-12 rounded flex items-center justify-center">
+3
+</div>
+
+     </div>
+  </body>
+</html>

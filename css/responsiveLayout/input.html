@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.Tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Breakpoint: This is a screen width at which the styles/layouts change -->
+    <div class="text-sm md:text-lg">Hello</div>
+
+    <!-- 
+    This means below 768px, takes the text-sm class, 768px abd above, take the text-lg class  -->
+
+    <!-- Mobile-first design: Tailwind follows a mobile-first design approach. This means you normally start with styles for mobile devices amd then breakpoints for larger screens -->
+    <h1 class="text-2xl md:text-4xl lg:text-6xl">Welcome</h1>
+    <!-- This means mobile -> text-2xl, md and above -> text-4xl, lg and above -> text-6xl. The class without a prefix is a default style. -->
+
+    <!-- Example -->
+    <!-- Responsive cards -->
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="rounded-xl p-4 shadow-sm bg-blue-100 ">Product 1</div>
+      <div class="rounded-xl p-4 shadow-sm bg-blue-100">Product 2</div>
+      <div class="rounded-xl p-4 shadow-sm bg-blue-100">Product 3</div>
+      <div class="rounded-xl p-4 shadow-sm bg-blue-100">Product 4</div>
+    </div>
+
+    <!-- combining responsive classes -->
+    <div
+      class="flex flex-col gap-4 p-4 sm:p-6 md:flex-row md:items-center md:justify-between lg:p-10"
+    >
+      <p>Content</p>
+      <p>More Content</p>
+    </div>
+
+
+    <!-- Common responsive patterns -->
+     <!-- 
+    Pattern 1: One column -> Multiple columbs.
+    Pattern 2: Vertical ->  Horizontal.
+    Pattern 3: Hidden -> Visible.
+    Pattern 4: Visible -> Hidden.
+    Pattern 5: Small text -> Larger text.
+    Patter 6: Small padding/margin-> Larger padding/margin
+    Pattern 7: Full width -> smaller width
+     -->
+
+     
+  </body>
+</html>

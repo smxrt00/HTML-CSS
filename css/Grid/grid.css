@@ -1,0 +1,90 @@
+/* Remove default spacing */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* Page styling */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+
+}
+
+/* Grid container */
+.container {
+    display: grid;
+
+    /* Two coloumn */
+    grid-template-columns: 220px 1fr;
+
+    /* header, main footer */
+    grid-template-rows: 80px 1fr 70px;
+
+    /* Layout arrangement */
+
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+    min-height: 100vh;
+}
+
+/*header  */
+.header {
+    grid-area: header;
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background-color:#1e293b;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+/* MAIN */
+.main {
+    grid-area: main;
+    background-color: white;
+    padding: 20px;
+} 
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color:lightblue;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* footer */
+.footer {
+    grid-area: footer;
+    background-color: navy;
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

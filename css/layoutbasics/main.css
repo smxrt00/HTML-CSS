@@ -1,0 +1,74 @@
+.box {
+  background-image: url("image/Image_fx\ \(14\).jpg");
+  height: 400px;
+  width: 400%;
+  background-position: center;
+  background-size: cover;
+}
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 3px solid brown;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: aqua;
+}
+.container {
+  margin-top: 10px;
+  background-color: bisque;
+  padding: 1rem 0;
+  width: 20%;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.container2 {
+  display: grid;
+  background-color:burlywood;
+  width: 40%;
+  padding: 1rem 0;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 200px;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.child2 {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: aqua;   
+}
+
+.container3 {
+    display: grid;
+    background-color: rgb(84, 79, 79);
+    width: 40%;
+    padding: 4rem 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 100px;
+    gap: 5px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.child3 {
+    display: flex;
+    background-color: bisque;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 5px;
+    border: 4px solid white;
+
+}

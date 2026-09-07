@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Positioning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col gap-[30px]">
+    
+<!-- Testing Absolute -->
+
+<div class="relative w-56 rounded-lg overflow-hidden shadow">
+    <span class="absolute top-2 right-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+        New
+    </span>
+
+    <img src="./images/Men's Shoes & Sneakers.jpg" class="w-full h-70 object-cover">
+
+    <div class="p-3">
+        <p class="font-semibold">Kricely Men's walking Shoes</p>
+        <p class="text-slate-500 text-sm">$50</p>
+    </div>
+</div>
+
+<button class="fixed bottom-6 right-6 bg-blue-600 text-white  w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:bg-blue-700">
+<ion-icon name="add-outline"></ion-icon>
+</button>
+
+
+<!-- Fixed -->
+
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
+
+<!-- Sticky -->
+
+<div class="h-40 overflow-y-auto">
+    <h3 class="sticky top-0 bg-slate-100 px-3 py-1 font-semibold text-sm">
+A
+</h3>
+<p class="px-3 py-2">Aaron</p>
+<p class="px-3 py-2">Alice</p>
+<p class="px-3 py-2">Amir</p>
+    <h3 class="sticky top-0 bg-slate-100 px-3 py-1 font-semibold text-sm">
+B
+</h3>
+<p class="px-3 py-2">Baron</p>
+<p class="px-3 py-2">Baldwin</p>
+<p class="px-3 py-2">Brown</p>
+</div>
+
+
+
+</body>
+</html>

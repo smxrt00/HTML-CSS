@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="studentreg.css">
+</head>
+<body>
+    
+    <form action="/register" method="post">
+        <h2>Student Registration</h2>
+        <div>
+            <label for="Name">Name</label>
+            <input type="text" id="name" required placeholder="Enter your Name">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="Age" min="18" max="40">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="Enter your Email"> 
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" minlength="9" maxlength="15" required placeholder="Enter your Password">
+        </div>
+        <div>
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" required placeholder="Phone Number">
+        </div>
+        <div>
+        <label for="Date of biirth">Date of birth</label>
+        <input type="date" id="Date of birth" name="Date of Birth" />
+      </div>
+      <div style="padding: 5px;">
+        <label>Gender</label>
+        <input type="radio" name="gender" value="Male" />Male
+        <input type="radio" name="gender" value="Female" style="padding: 5px;"/>Female
+      </div>
+
+      <div>
+      <label for="country">Country</label>
+      <select name="Country" id="Country">
+        Select your Country
+        <option value="">Select your Country</option>
+        <option value="Morocco">Taiwan</option>
+        <option value="Turkey">Uzbekistan</option>
+        <option value="Japan">Oman</option>
+        <option value="Spain">Malta</option>
+      </select>
+
+    </div>
+    <div>
+        <textarea name="message" id="message" cols="30" rows="10" class="textarea"></textarea>
+    </div>
+    
+    <div>
+        <label>
+            <input type="checkbox" class="check">I agree to the terms and conditions
+        </label>
+    </div>
+    <button type="submit" class="btn1">Submit</button>
+    <button type="reset" class="btn2">Reset</button>
+    </form>
+</body>
+</html>

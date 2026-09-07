@@ -1,0 +1,60 @@
+button:hover {
+    background-color: blue;
+    color: white;
+}
+button:active {
+    background-color: darkblue;
+    color: white;
+}
+
+input:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.box::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: red;
+}
+.box::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: red;
+}
+.old::first-letter {
+    color: red;
+}
+.new::first-line {
+   font-weight: bold;
+}
+.new::before {
+   content: "👋";
+}
+.new::after {
+content: :"✨";
+}
+.new::selection {
+    background-color: yellow;
+    color: black;
+}

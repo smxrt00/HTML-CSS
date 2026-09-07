@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Common elements that's always used to collect different type of information-->
+    <form action="">
+      <!--Label gives a particular data or information a name-->
+      <!--Input allows typing of informtion and also specifies the type of information.-->
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" />
+      </div>
+      <!--Textareas works just like input, but it is used when there will be miltiple lines of text-->
+      <textarea name="message" id="message" cols="30" rows="10">Feedback:</textarea>
+      <!--Select allows us to choose from a list of options. It creates a dropdown of options-->
+      <!--The options represents just an item from the list.-->
+      <select name="cars">
+        <option value="volvo">volvo</option>
+        <option value="saab">saab</option>
+        <option value="mercedes">mercedes</option>
+        <option value="audi">audi</option>
+      </select>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <h3>Form attributes</h3>
+    <p>
+      Attributes are used to provide additional information or instruction about
+      an elements. For example the action attributes specifies where to sebd the
+      form and data when the form is submitted. The method attributes specifies
+      hoe to send the form data (e.g, Get or Post). Other attributes includes
+      name, id, class,amd placeholder, which help identify and style form
+      elements.
+      
+      Types of form attributes includes:
+      <ul>
+        <li>Action: Specifies where to send the form data when the form is submitted</li>
+        <li>Method: Specifies how to send the form data (e.g, Get or Post)</li>
+        <li>Autocomplete: Controls whether the browser should automatically complete the input</li>
+      </ul>
+
+    <h3>Type of input attributes</h3>
+    
+        There are several types of attributes that can be used in HTML forms. some common types includes:
+        <ul>
+            <li>Type: Specifies the types of input field</li>
+            <li>Placeholder: Provides a hint or example of the exppected input</li>
+            <li>Required: Indicates that the input field must be filled out before submitting the form.</li>
+            <li>Readonly: Makes yhe input field read-only, preventing users from interacting with it</li>
+            <li>Disabled: Disables the input field.</li>
+            <li>Name: Specifies the name of the input field, which is used to identify the data when submitted.</li>
+            <li>ID: Uniquely identifies the input field</li>
+        </ul>
+         </p>
+         <h3>Input Types</h3>
+         <ul>
+            <li>Text</li>
+            <li>Email</li>
+            <li>Number</li>
+            <li>Checkbox: It allows users to select one or more options.</li>
+            <label for="">
+                <input type="checkbox">
+                I agree to the terms and conditions
+                <input type="checkbox">
+                check me out
+                <input type="checkbox">
+                Indulge Me
+            </label>
+            <li>Radio: It allows users to selct only one option from the group</li>
+            <label>Gender</label>
+                <input type="radio" name="gender" value="male"/>Male
+                <input type="radio" name="gender" value="female"/>Female
+            <li>Submit: A button that submits the form data to the server</li>
+            <li>Reset button that resets the form fields to their default values.</li>
+         </ul>
+         <section>
+            <h3>Input form attributes</h3>
+            There are several input form attributes that can be uswed to enhance th functionality and usability of HTML forms. Some inpur form attributes include:
+            <ul>
+                <li>Form: The form attributes can  be used to associate an input field with a specific form</li>
+                <li>Formaction: The formaction attributes can be used to sepcify where to send the data when the form is sumitted</li>
+                <li>Formmethod: The formmethod attributes can be used to sepcify how to send the form data </li>
+            </ul>
+         </section>
+  </body>
+</html>

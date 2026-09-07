@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create account</title>
+  </head>
+  <body>
+    <form action="/register" method="post">
+      <h1>Create Account</h1>
+      <div>
+        <label for="username">Name</label>
+        <input
+          type="text"
+          name=""
+          id="name"
+          required
+          placeholder="Enter your name"
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="text" id="Email" required placeholder="Enter your Email" />
+      </div>
+      <div>
+        <label for="password">Passord</label>
+        <input
+          type="password"
+          id="password "
+          name="password"
+          required
+          placeholder="Enter your password"
+          minlength="8"
+        />
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input
+          type="number"
+          id="Age"
+          name="Age"
+          required
+          placeholder="Enter your Age"
+          min="18"
+          max="40"
+        />
+      </div>
+      <div>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="">Select your country</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">UK</option>
+          <option value="australia">Australia</option>
+        </select>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" value="terms" required /> i agree to the terms
+          and conditions
+        </label>
+      </div>
+      <button type="submit">Create Account</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <!--Formaction-->
+    <form action="/login" method="post">
+        <h1>Login</h1>
+        <div>
+            <label for="login-email">Email</label>
+            <input type="email"
+            id="login-email"
+            name="email"
+            required placeholder="Enter Your Email">
+        </div>
+        <div>
+            <label for="login-password">Passord</label>
+            <input type="password"
+            id="login-password"
+            name="password"
+            required placeholder="Enter your Password">
+        </div>
+        <button type="submit">Login</button>
+        <button type="submit" formaction="/register">Register</button>
+    </form>
+    <!--Formmethod-->
+    <form action="/search" method="get">
+        <label for="search">Search;</label>
+        <input type="text" id="query" required placeholder="search...">
+        <button type="submit">Search</button>
+        <button type="submit" formmethod="POST">search</button>
+    </form>
+    <!--formmethod and formaction-->
+    <form action="search" method="GET">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Enter your Email">
+        <label for="password">Password:</label>
+        <input type="password" name="password" required placeholder="Enter your Password">
+
+        <button type="submit">Login</button>
+        <button type="submit" formaction="/forget-passwird" formmethod="GET">Forget Password</button>
+    </form>
+  </body>
+</html>
